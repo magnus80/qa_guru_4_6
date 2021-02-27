@@ -19,6 +19,6 @@ class PracticeFormTests {
         open("https://yandex.ru/");
 
         $("#text").val("Selenide").pressEnter();
-        $("[data-cid='1'] a").shouldHave(href("https://ru.selenide.org/"));
+        $("[data-cid='1'] a").shouldHave(href("https://ru.selenide.org/").because("We've found it"));
     }
 }
